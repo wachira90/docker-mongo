@@ -3,14 +3,14 @@ version: '3.1'
 services:
 
   mongo:
-    image: mongo:bionic
+    image: wachira90/mongo:bionic
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
 
   mongo-express:
-    image: mongo-express:0.54
+    image: wachira90/mongo-express:0.54
     restart: always
     ports:
       - 8081:8081
